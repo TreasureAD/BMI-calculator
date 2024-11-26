@@ -1,0 +1,90 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid transparent;
+    animation: glowingBorder 5s infinite;
+}
+
+@keyframes glowingBorder {
+    0% { border-color: #43cea2; box-shadow: 0 0 5px #43cea2; }
+    50% { border-color: #14d4ed; box-shadow: 0 0 20px #08a1b9; }
+    100% { border-color: #43cea2; box-shadow: 0 0 5px #43cea2; }
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.gender-select {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.toggle {
+    padding: 8px 20px;
+    background-color: #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#male:checked + .toggle,
+#female:checked + .toggle {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; /* Changed button color to green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added more space */
+}
+
+.bmi-status-bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background: grey; /* Default color */
+    margin-top: 15px; /* Added space above the bar */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for color change */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* JavaScript updates these classes based on BMI calculations */
+.low { background-color: yellow; }
+.normal { background-color: green; }
+.high { background-color: red; }
