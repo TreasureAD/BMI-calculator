@@ -60,23 +60,23 @@ input[type="number"] {
 }
 
 button {
-    background-color: #4CAF50; /* Changed button color to green */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    margin-bottom: 20px; /* Added more space */
+    margin-bottom: 20px; 
 }
 
 .bmi-status-bar {
     height: 10px;
     width: 100%;
     border-radius: 5px;
-    background: grey; /* Default color */
-    margin-top: 15px; /* Added space above the bar */
-    transition: background-color 0.5s ease-in-out; /* Smooth transition for color change */
+    background: grey; 
+    margin-top: 15px; 
+    transition: background-color 0.5s ease-in-out; 
 }
 
 .result {
